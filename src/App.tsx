@@ -80,13 +80,6 @@ function App() {
   const handleEnableUsername = (index: number) => {
     setActiveRoomIndex(index);
   };
-
-  const handleTimeout = () => {
-    if (questionData.roomId !== null) {
-      socket.emit("ask_new_question", questionData.roomId);
-    }
-  };
-
   return (
     <div className="App">
       {info ? (
