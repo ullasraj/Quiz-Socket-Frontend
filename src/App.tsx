@@ -82,8 +82,9 @@ function App() {
   };
   return (
     <div className="App">
+      <p>Quiz Game</p>
       {info ? (
-        <>
+        <><p>Quiz Game Info</p>
           {waitingRoomData.enable ? (
             <p>Waiting in room {waitingRoomData.roomId} username {waitingRoomData.username}</p>
           ) : gameStarted ? (
